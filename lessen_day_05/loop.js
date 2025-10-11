@@ -100,7 +100,109 @@ let words = ["Сайн", "байна", "уу"]
 let total_length = 0;
 for (let word of words) {
     total_length += word.length
-   
-
 }
- console.log("Нийт үсгийн тоо", total_length);
+console.log("Нийт үсгийн тоо", total_length);
+
+//Ex_13
+console.log("//Ex_13");
+
+let scores = [75, 92, 81, 60, 88];
+let high_scores = 0;
+for (let score of scores) {
+    if (score > 80) {
+        high_scores++;
+    }
+}
+console.log("80-аас дээш оноотой сурагчдын тоо:", high_scores);
+
+//Ex_14
+console.log("//Ex_14");
+let shopping_list = ["Алим", "Талх"];
+let new_item = prompt("Шинэ зүйлээ оруулна уу:");
+shopping_list.push(new_item);
+
+console.log("Таны шинэчилсэн жагсаалт:");
+for (let item of shopping_list) {
+    console.log(item);
+}
+
+//Ex_15
+console.log("//Ex_15");
+let numbers2 = [12, 45, 8, 29, 50, 19];
+let max_number = numbers2[0];
+
+for (let number of numbers2) {
+    if (number > max_number) {
+        max_number = number;
+    }
+}
+console.log("Хамгийн их тоо:", max_number);
+
+//Ex_16
+console.log("//Ex_16");
+let numbers3 = [12, 45, 8, 29, 50, 19];
+let min_number = numbers3[0];
+
+for (let number of numbers3) {
+    if (number < min_number) {
+        min_number = number;
+    }
+}
+console.log("Хамгийн бага тоо:", min_number);
+
+//Ex_17
+console.log("//Ex_17");
+
+let words4 = ["ном", "компьютер", "үзэг", "дэвтэр"];
+let long_words = [];
+
+for (let word of words4) {
+    if (word.length > 4) {
+        long_words.push(word);
+    }
+}
+console.log(long_words);
+
+//Ex_18
+console.log("//Ex_18");
+let sentence = "Би програмчлалд суралцаж байна";
+let space_count = 0;
+
+for (let character of sentence) {
+    if (character === " ") {
+        space_count++;
+    }
+}
+
+console.log("Зайны тоо:", space_count);
+
+//Ex_19
+console.log("//Ex_19");
+
+let text = "hello";
+let reversed_text = "";
+
+for (let character of text) {
+    reversed_text = character + reversed_text;
+}
+
+console.log(reversed_text);
+
+//Ex_20
+console.log("//Ex_20");
+let items2 = ["алим", "гадил", "жүрж"];
+let item_to_find = "гадил";
+let found = false;
+
+for (let item of items2) {
+    if (item === item_to_find) {
+        found = true;
+        break;
+    }
+}
+
+if (found) {
+    console.log("Олдлоо!");
+} else {
+    console.log("Олдсонгүй.");
+}
