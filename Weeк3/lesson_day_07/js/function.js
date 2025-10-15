@@ -179,4 +179,4 @@ function countdown() {
         console.log(number);
     console.log("ХӨӨРЛӨӨ! 🚀");
 }
-countdown()
+// countdown()
