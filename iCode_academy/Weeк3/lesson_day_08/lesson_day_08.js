@@ -209,3 +209,30 @@ function drawRectangle(width, height, character){
     for (let i = 1; i <= length; i++) {
         a += character
 }
+}
+drawRectangle(10, 4,"#")
+
+// Дасгал 17.
+console.log("Дасгал 17");
+
+function drawPyramid(height) {
+    for (let i = 1; i <= height; i++) {
+        let spaces = " " * (height - i);
+        let stars = "*" * (2 * i - 1);
+        console.log(spaces + stars);
+    }
+
+}
+hello = draw_pyramid(5)
+console.log(hello)
+
+
+// Дасгал 18.
+console.log("Дасгал 18");
+
+
+// Дасгал 19.
+console.log("Дасгал 19");
+
+// Дасгал 19.
+console.log("Дасгал 19");
