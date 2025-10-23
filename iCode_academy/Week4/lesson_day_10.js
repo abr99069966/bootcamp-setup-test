@@ -81,7 +81,7 @@ console.log(`${numder} тэгш үү? ${evenOrOdd}`);
 // Дасгал 6.
 console.log("Дасгал 6");
 
-function toUppercase(text){
+function toUppercase(text) {
     return (text.toUpperCase());
 }
 let up = toUppercase("ankhbayar");
@@ -90,7 +90,7 @@ console.log(up);
 // Дасгал 7.
 console.log("Дасгал 7");
 
-function getFirstElement(myList){
+function getFirstElement(myList) {
     return myList;
 }
 let list = getFirstElement("Алим");
@@ -100,11 +100,25 @@ console.log(`Эхний жимс: ${list}`);
 // Дасгал 8.
 console.log("Дасгал 8");
 
-function findLarger(num3, num4){
+function findLarger(num3, num4) {
     return Math.max(num3, num4);
 }
-let max = findLarger( 120, 100);
+let max = findLarger(120, 100);
 console.log(max);
 
 // Дасгал 9.
 console.log("Дасгал 9");
+
+function sumList(numbers) {
+    return numbers;
+}
+let numm = sumList(10 + 26)
+console.log(numm);
+
+// Дасгал 10.
+console.log("Дасгал 10");
+
+function countChar(text, charToFind){
+    return charToFind(text, charToFind);
+
+}
