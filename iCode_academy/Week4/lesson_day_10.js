@@ -118,7 +118,21 @@ console.log(numm);
 // Дасгал 10.
 console.log("Дасгал 10");
 
-function countChar(text, charToFind){
-    return charToFind(text, charToFind);
-
+function countChar(text, charToFind) {
+  let count = 0;
+  for (let ch of text) {
+    if (ch === charToFind) {
+      count++;
+    }
+  }
+  return count;
 }
+const text = "Сайн байна уу";
+const char = "а";
+const resultt = countChar(text, char);
+
+console.log(`'${char}' үсэг ${resultt} удаа орсон байна.`);
+
+
+// Дасгал 11.
+console.log("Дасгал 11");
