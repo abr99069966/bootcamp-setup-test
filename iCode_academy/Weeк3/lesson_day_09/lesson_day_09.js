@@ -170,6 +170,7 @@ function calculateGrade() {
 }
 
 calculateGrade(); // asuuh
+<<<<<<< Updated upstream
 
 // Дасгал 02.
 console.log("Дасгал 02.");
@@ -212,3 +213,5 @@ function findNumber() {
 }
 
 findNumber();
+=======
+>>>>>>> Stashed changes
