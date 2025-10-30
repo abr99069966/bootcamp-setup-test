@@ -1,0 +1,45 @@
+
+
+h1{
+    color: antiquewhite;
+    background-color: darkslategray;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    
+}
+img{
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+}
+h2{
+    color: aliceblue;
+    background-color: darkslategray;
+    height: 50px;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+p{
+    text-align: justify;
+    background-color: darkslategrey;
+    width: 500px;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+}
+a {
+    background-color: white;
+    text-align: center;
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: darkblue;
+}
+div{
+    background-color: rgb(32, 30, 30);
+}
