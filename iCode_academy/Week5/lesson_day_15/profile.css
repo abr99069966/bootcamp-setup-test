@@ -11,14 +11,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    
-
-
 }
-img{
-    border-radius:  20%;
+
+img {
+    border-radius: 20%;
     box-shadow: 5px 5px 10px;
 }
+
 h1 {
     text-align: center;
     background-color: aliceblue;

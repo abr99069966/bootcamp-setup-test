@@ -105,3 +105,20 @@ for ( let i =0; i <= 50; i++){
     sum += i;
 }
 console.log(`1-ээс 50 хүртэлх тоонуудын нийлбэр: ${sum}`);
+
+let fruits = ["алим", "гадил"];
+let poppedValue = fruits.pop();
+console.log(poppedValue); // "гадил"
+console.log(fruits); // ['алим']
+
+// Бүхэл тоо
+console.log(Number.isInteger(10)); 
+// Үр дүн: true
+
+// Аравтын бутархай тоо
+console.log(Number.isInteger(10.5)); 
+// Үр дүн: false
+
+// Сөрөг бүхэл тоо
+console.log(Number.isInteger(-10)); 
+// Үр дүн: true
