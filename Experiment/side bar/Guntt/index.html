@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gantt Chart — Vanilla JS / HTML / CSS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <h1 class="title">Gantt Chart — JS/HTML/CSS</h1>
+  <p class="subtitle">Энгийн, цэвэр төрхтэй Gantt. Баруудыг чирж/сунгана, today line, tooltip, хэлбэртэй.</p>
+
+  <div class="board">
+    <!-- Controls / Form -->
+    <aside class="side">
+      <h3>Даалгавар нэмэх</h3>
+      <form id="taskForm">
+        <div class="field">
+          <label for="name">Нэр</label>
+          <input id="name" name="name" placeholder="Жишээ: Шат 1 – Төлөвлөлт" required>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="start">Эхлэх</label>
+            <input id="start" name="start" type="date" required>
+          </div>
+          <div class="field">
+            <label for="end">Дуусах</label>
+            <input id="end" name="end" type="date" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="progress">Явц (%)</label>
+          <input id="progress" name="progress" type="number" min="0" max="100" step="1" value="0">
+        </div>
+        <button class="btn" type="submit">Нэмэх</button>
+        <div class="small">⏱ Хугацаа өдрөөр. Чирэхэд өдөрт “snap”-тай.</div>
+      </form>
+    </aside>
+
+    <!-- Gantt -->
+    <section class="gantt">
+      <div class="timeline">
+        <div class="left">Өдөр</div>
+        <div class="right" id="timelineScroller">
+          <div class="days" id="days"></div>
+        </div>
+      </div>
+
+      <div class="body">
+        <div class="labels" id="labels"></div>
+        <div class="rows" id="rows">
+          <div class="grid" id="grid"></div>
+          <div class="bars" id="bars"></div>
+          <div class="today-line" id="todayLine"></div>
+        </div>
+      </div>
+
+      <div class="legend">
+        <span><i class="dot bar"></i>Төлөвлөгдсөн</span>
+        <span><i class="dot progress"></i>Гүйцэтгэл</span>
+        <span><i class="dot today"></i>Өнөөдөр</span>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
