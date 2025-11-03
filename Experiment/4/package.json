@@ -1,0 +1,10 @@
+{
+  "name": "ag-grid-example",
+  "dependencies": {
+    "ag-grid-community": "34.1.2",
+    "ag-grid-enterprise": "34.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22"
+  }
+}
