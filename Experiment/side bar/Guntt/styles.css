@@ -1,0 +1,361 @@
+:root {
+    --bg: #0b1020;
+    --panel: #111936;
+    --muted: #5e6b87;
+    --text: #e9edf7;
+    --accent: #6fd1ff;
+    --green: #22c55e;
+    --red: #ef4444;
+    --grid: #1b2445;
+    --bar: #79a6f6;
+    --bar-dark: #4f7bd1;
+    --today: #f59e0b;
+    --shadow: 0 10px 25px rgba(0, 0, 0, .35);
+    --dayWidth: 36px;
+    /* JS-с шинэчлэгдэнэ */
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #0b1020, #0b132a);
+    color: var(--text);
+    font: 14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.app {
+    max-width: 1200px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    margin: 0 0 4px
+}
+
+.subtitle {
+    color: var(--muted);
+    margin: 0 0 18px
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 12px;
+}
+
+/* Sidebar */
+.side {
+    background: var(--panel);
+    border: 1px solid var(--grid);
+    border-radius: 16px;
+    padding: 14px;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 16px;
+    align-self: start;
+    height: fit-content;
+}
+
+.side h3 {
+    margin: 0 0 10px;
+    font-size: 16px
+}
+
+.field {
+    display: grid;
+    gap: 6px;
+    margin-bottom: 10px
+}
+
+label {
+    color: var(--muted);
+    font-size: 12px
+}
+
+input,
+select,
+button {
+    background: #0f1630;
+    border: 1px solid #22305e;
+    color: var(--text);
+    border-radius: 10px;
+    padding: 10px 12px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(111, 209, 255, .15)
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px
+}
+
+.btn {
+    cursor: pointer;
+    transition: .2s transform ease
+}
+
+.btn:hover {
+    transform: translateY(-1px)
+}
+
+.small {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 8px
+}
+
+/* Gantt container */
+.gantt {
+    background: var(--panel);
+    border: 1px solid var(--grid);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+/* Header timeline */
+.timeline {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    align-items: stretch;
+    border-bottom: 1px solid var(--grid);
+    background: linear-gradient(180deg, #0f1733, #0c1530);
+}
+
+.timeline .left {
+    border-right: 1px solid var(--grid);
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    color: var(--muted)
+}
+
+.timeline .right {
+    overflow: auto hidden;
+    position: relative
+}
+
+.days {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: var(--dayWidth);
+    min-height: 42px;
+    align-items: stretch
+}
+
+.daycell {
+    border-left: 1px solid var(--grid);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px
+}
+
+.daycell .d {
+    font-weight: 700
+}
+
+.daycell .w {
+    color: var(--muted);
+    font-size: 11px
+}
+
+.daycell.weekend {
+    background: rgba(255, 255, 255, .02)
+}
+
+/* Body */
+.body {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    min-height: 420px
+}
+
+.labels {
+    border-right: 1px solid var(--grid);
+    overflow: auto;
+    background: rgba(0, 0, 0, .05)
+}
+
+.rows {
+    overflow: auto;
+    position: relative
+}
+
+.label {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    border-bottom: 1px solid var(--grid)
+}
+
+.label:nth-child(even) {
+    background: rgba(255, 255, 255, .02)
+}
+
+.grid {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: var(--dayWidth)
+}
+
+.grid>div {
+    border-left: 1px solid var(--grid)
+}
+
+.grid .weekend {
+    background: rgba(255, 255, 255, .02)
+}
+
+.bars {
+    position: relative;
+    min-height: 100%
+}
+
+.bar {
+    position: absolute;
+    height: 26px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, var(--bar), var(--bar-dark));
+    box-shadow: 0 6px 16px rgba(79, 123, 209, .25), inset 0 1px 0 rgba(255, 255, 255, .15);
+    border: 1px solid rgba(255, 255, 255, .15);
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    gap: 8px;
+    cursor: grab;
+}
+
+.bar:active {
+    cursor: grabbing
+}
+
+.bar .name {
+    font-size: 12px;
+    white-space: nowrap
+}
+
+.bar .progress {
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    background: rgba(34, 197, 94, .25);
+    width: 0;
+    pointer-events: none
+}
+
+.bar .handle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar .handle.left {
+    left: -3px;
+    cursor: w-resize
+}
+
+.bar .handle.right {
+    right: -3px;
+    cursor: e-resize
+}
+
+.bar .pct {
+    margin-left: auto;
+    font-size: 11px;
+    opacity: .85
+}
+
+.today-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--today);
+    box-shadow: 0 0 0 2px rgba(245, 158, 11, .2)
+}
+
+.tooltip {
+    position: fixed;
+    pointer-events: none;
+    z-index: 2000;
+    background: #0f1630;
+    border: 1px solid #22305e;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: var(--text);
+    display: none
+}
+
+.legend {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding: 10px 12px;
+    border-top: 1px solid var(--grid);
+    background: #0e1632;
+    color: var(--muted)
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px
+}
+
+.dot.bar {
+    background: var(--bar-dark)
+}
+
+.dot.progress {
+    background: var(--green)
+}
+
+.dot.today {
+    background: var(--today)
+}
+
+@media (max-width: 900px) {
+    .board {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline {
+        grid-template-columns: 160px 1fr
+    }
+
+    .body {
+        grid-template-columns: 160px 1fr
+    }
+}
