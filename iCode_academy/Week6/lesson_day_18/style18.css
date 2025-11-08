@@ -1,0 +1,121 @@
+body {
+
+    background-color: black;
+
+}
+
+.backround {
+    margin: auto;
+    justify-items: center;
+    width: 1280px;
+    height: 700px;
+    background-color: #080808
+}
+
+.topMenu {
+    font-family: monospace;
+    display: flex;
+    width: 1110px;
+    height: 70px;
+    align-items: center;
+    background-color: #1b1b1b;
+    justify-content: space-around;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.topMenu a {
+    font-size: 120%;
+    text-decoration: none;
+    font-weight: 50;
+    padding: 30px;
+    color: #9c9c9c;
+    flex-direction: column;
+}
+
+.topMenu a:hover {
+    text-decoration: underline;
+    color: #3f8e00;
+}
+
+.sociallogo {
+    display: flex;
+    width: 107.54px;
+    height: 17px;
+    gap: 25px;
+}
+
+.LinkedIn:hover {
+    filter: invert(55%) sepia(90%) saturate(3000%) hue-rotate(180deg);
+}
+
+.Behance:hover {
+    filter: invert(55%) sepia(90%) saturate(3000%) hue-rotate(180deg);
+}
+
+.Twitter:hover {
+    filter: invert(55%) sepia(90%) saturate(3000%) hue-rotate(180deg);
+}
+
+.container{
+    margin: 50px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    width: 1110px;
+    height: 400px;
+}
+.information h1{
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+.information p{
+    color: rgb(92, 92, 92);
+    font-family: 'Courier New', Courier, monospace;
+}
+.information{
+    width: 400px;
+    display:
+    
+}
+.picture img{
+    border-radius: 50%;
+}
+.information button{
+    height: 63px;
+    width: 308px;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.05rem;
+    border-radius: 4px;
+    border-color: rgba(98, 186, 27, 1);
+    background-color: #3f8e00;
+    box-shadow: rgba(63, 142, 0, 0.5)
+    
+}
+h3{
+    align-self: baseline;
+    color: rgb(172, 172, 172);
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.footer{
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: space-between;
+    width: 920px;
+    height: 80px;
+    align-items: top;
+
+}
+.footer button{
+    width: 160px;
+    height: 60px;
+    background-color: #080808;
+    border-radius: 8px;
+    border-color: #1b1b1b;
+
+}
+
+
+DDDDD
