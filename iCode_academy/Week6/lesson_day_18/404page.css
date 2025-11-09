@@ -1,0 +1,116 @@
+body {
+    background-color: rgba(247, 247, 247, 1);
+}
+
+header {
+    margin: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+}
+
+.topMenu {
+    width: 500px;
+    font-size: medium;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: space-between;
+
+}
+
+.topMenu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 540;
+}
+
+.sign {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sign a {
+    color: black;
+    font-weight: 540;
+}
+
+.sign button {
+    width: 140px;
+    height: 58px;
+    border: none;
+    font-size: medium;
+    font-weight: 540px;
+    color: aliceblue;
+    border-radius: 8px;
+    background-color: rgba(75, 171, 102, 1);
+}
+
+.sign button:hover {
+    background-color: rgba(75, 171, 102, 80%);
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    height: 800px;
+    margin: 50px;
+    gap: 80px;
+}
+
+.img {
+    width: 500px;
+}
+
+.info {
+    gap: 30px;
+}
+
+.info h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem;
+}
+
+.info h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.Visit {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    height: 58px;
+    width: 231px;
+    background-color: rgba(216, 227, 146, 1);
+    border-radius: 8px;
+    border: none;
+}
+
+.Visit:hover {
+    background-color: rgba(216, 227, 146, 80%);
+}
+
+.Back {
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    height: 58px;
+    width: 202px;
+    background-color: rgba(75, 171, 102, 1);
+    border-radius: 8px;
+    border: none;
+}
+
+.Back:hover {
+    background-color: rgba(75, 171, 102, 80%);
+}

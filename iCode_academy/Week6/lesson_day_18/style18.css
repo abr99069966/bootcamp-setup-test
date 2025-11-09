@@ -63,20 +63,23 @@ body {
     align-items: center;
     display: flex;
     width: 1110px;
-    height: 400px;
+    height: 380px;
 }
 .information h1{
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
 }
 .information p{
-    color: rgb(92, 92, 92);
+    height: 100px;
+    color: rgb(230, 218, 218);
+    font-family: 'Courier New', Courier, monospace;
+}
+.information h3{
+    color: rgb(223, 207, 207);
     font-family: 'Courier New', Courier, monospace;
 }
 .information{
-    width: 400px;
-    display:
-    
+    width: 400px
 }
 .picture img{
     border-radius: 50%;
@@ -90,32 +93,38 @@ body {
     border-radius: 4px;
     border-color: rgba(98, 186, 27, 1);
     background-color: #3f8e00;
-    box-shadow: rgba(63, 142, 0, 0.5)
+    box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.5);
+
+}
+.information button:hover{
+    border-color: rgba(98, 186, 27, 150%);
+    background-color: rgb(63, 142, 0, 80%);
     
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    width: 920px;
+    height: 100px;
+    font-family: 'Courier New', Courier, monospace;
 }
 h3{
     align-self: baseline;
     color: rgb(172, 172, 172);
     font-family: 'Courier New', Courier, monospace;
-    
 }
-.footer{
+.logos{
     display: flex;
-    margin-bottom: 100px;
     justify-content: space-between;
-    width: 920px;
-    height: 80px;
-    align-items: top;
 
 }
+
 .footer button{
     width: 160px;
     height: 60px;
     background-color: #080808;
     border-radius: 8px;
     border-color: #1b1b1b;
-
 }
-
-
-DDDDD
