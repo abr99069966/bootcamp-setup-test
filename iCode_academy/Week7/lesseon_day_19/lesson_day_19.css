@@ -1,0 +1,74 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+caption{
+    height: 40px;
+    font-family: sans-serif;
+    font-size: larger;
+    font-weight: 600;
+}
+.studentScore{
+    border-collapse: collapse;
+    font-family: sans-serif;
+    border: 1px solid #aaa;
+    width: 1000px;
+    margin: auto;
+}
+.studentScore tr th{
+    border: 1px solid rgb(134, 134, 134);
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(190, 250, 190);
+}
+.row1 td{
+    background-color: rgb(235, 253, 218);
+}
+.row2 td{
+    background-color: rgb(253, 253, 253);
+}
+.row3 td{
+    background-color: rgb(235, 253, 218);
+}
+td{
+    padding: 8px;
+    border: 1px solid rgb(134, 134, 134);
+    text-align: center;
+}
+
+.weekPlan{
+    border-collapse: collapse;
+    font-family: sans-serif;
+    border: 1px solid #aaa;
+    width: 1000px;
+    margin: auto;
+}
+.weekPlan tr th{
+    border: 1px solid rgb(134, 134, 134);
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(129, 236, 255);
+}
+.weekPlan tfoot td{
+    background-color: rgb(164, 241, 255);
+    font-weight: 600;
+}
+
+.price{
+    border-collapse: collapse;
+    font-family: sans-serif;
+    border: 1px solid #aaa;
+    width: 1000px;
+    margin: auto;
+}
+.price tr th{
+    border: 1px solid rgb(134, 134, 134);
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(245, 225, 47);
+}
+.color{
+    background-color: bisque;
+    font-weight: 600;
+}
