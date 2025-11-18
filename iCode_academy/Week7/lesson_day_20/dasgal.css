@@ -148,7 +148,7 @@ h1 {
     font-family: sans-serif;
 }
 
-.userinformation input{
+.nameEmailDate input{
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -166,10 +166,7 @@ h1 {
     border: none;
     color: white;
 }
-.userinformation h1{
-    justify-items: center; 
-}
-.userinformation select{
+.accountType select{
     width: 100%;
     padding: 15px;
     margin-top: 10px;
@@ -177,11 +174,12 @@ h1 {
     border: 1px solid rgb(179, 179, 179);
     border-radius: 8px; 
 }
-
-.form-box{
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    white-space: nowrap;
-
+.userinformation h2{
+    text-align: center;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }

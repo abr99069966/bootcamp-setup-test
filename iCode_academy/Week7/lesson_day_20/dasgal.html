@@ -79,6 +79,7 @@
     <fieldset class="userinformation">
         <form action="">
             <h2>User Information</h2>
+<<<<<<< HEAD
             <label for="Fullname">Full Name</label>
             <br>
             <input type="name" placeholder="Your name">
@@ -108,7 +109,38 @@
                     <label><input type="checkbox" name="hobby" value="travel"> Travel</label>
                 </div>
             </form>
+=======
+            <div class="nameEmailDate">
+                <label for="Fullname">Full Name</label>
+                <br>
+                <input type="name" placeholder="Your name">
+                <br>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" placeholder="Your email">
+                <br>
+                <label for="birthday">Birth Date</label><br>
+                <input type="date">
+                <br>
+                <form class="form-box">
+            </div>
+            <div class="section">
+                <label><strong>Gender</strong></label><br>
+                <label><input type="radio" name="gender" value="male"> Male</label><br>
+                <label><input type="radio" name="gender" value="female"> Female</label><br>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+>>>>>>> d4913f63f217e3616cb34eb43f7cbe94d2552ae3
 
+            <div class="section">
+                <label><strong>Hobbies</strong></label><br>
+                <label><input type="checkbox" name="hobby" value="music"> Music</label><br>
+                <label><input type="checkbox" name="hobby" value="sports"> Sports</label><br>
+                <label><input type="checkbox" name="hobby" value="reading"> Reading</label><br>
+                <label><input type="checkbox" name="hobby" value="travel"> Travel</label>
+            </div>
+        </form>
+        <div class="accountType">
             <label for="account type">Account Type</label>
             <br>
             <select name="type" id="">
@@ -117,6 +149,7 @@
                 <option value="Standart">High</option>
             </select>
             <button>Submit</button>
+        </div>
         </form>
     </fieldset>
 
