@@ -1,0 +1,21 @@
+.box-1{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    color: white;
+    padding-top: 200px;
+    box-sizing: border-box;
+    border: 5px dotted lightcyan;
+
+}
+
+.box-1-inner{
+    background-color: palevioletred;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px 30px;
+    border-top: 3px solid red;
+    border-right: 3px dotted blue;
+    border-bottom: 3px dashed white;
+    border-left: 3px double yellow;
+}
