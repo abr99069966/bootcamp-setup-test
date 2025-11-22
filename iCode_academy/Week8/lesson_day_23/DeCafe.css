@@ -81,12 +81,16 @@
   height: 416px;
   background-color: rgba(243, 213, 181, 1);
 }
+@font-face {
+  font-family: inter ;
+  src: url(../lesson_day_24/files/Inter-VariableFont_opsz\,wght.ttf);
+}
 .frame1-1 p{
   display: flex;
   align-self: center;
   justify-items: center;
   font-size: 3rem;
-  font-family: ;
+  font-family: inter;
   font-weight: 900;
   font-style: normal;
   text-align: center;
