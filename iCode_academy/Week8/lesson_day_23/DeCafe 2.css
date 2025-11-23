@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Alegreya;
+  font-family: Alegreya ;
   src: url(./images/Alegreya-VariableFont_wght.ttf);
 }
 
@@ -64,24 +64,22 @@
   background-color: rgb(255, 255, 255);
   justify-items: center;
 }
-
-.heroContainer {
+.heroContainer{
   display: block;
-  padding-top: 32px;
+  padding-top:  32px;
   width: 1320px;
   height: 888px;
   justify-items: center;
 }
 
-.frame1 {
+.frame1{
   padding-bottom: 24px;
   display: flex;
   justify-content: space-between;
   width: 1296px;
   height: 416px;
 }
-
-.frame1-1 {
+.frame1-1{
   border-radius: 24px;
   display: flex;
   width: 416px;
@@ -89,7 +87,7 @@
   background-color: rgba(243, 213, 181, 1);
 }
 
-.frame1-1 p {
+.frame1-1 p{
   color: rgba(67, 40, 24, 1);
   align-self: center;
   justify-items: center;
@@ -99,29 +97,26 @@
   font-style: normal;
   text-align: center;
 }
-
 .ibm-plex-mono-thin {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 100;
   font-style: normal;
 }
 
-.frame2-1 {
+.frame2-1{
   border-radius: 24px;
   display: flex;
   width: 416px;
   height: 416px;
   background-color: rgba(243, 213, 181, 1);
 }
-
-.frame2 {
+.frame2{
   justify-content: space-between;
   display: flex;
   width: 1296px;
   height: 416px;
 }
-
-.frame2-1 p {
+.frame2-1 p{
   color: rgba(67, 40, 24, 1);
   margin: 50px;
   align-self: center;
@@ -133,20 +128,19 @@
   text-align: center;
 }
 
-.about-us {
+.about-us{
   background-color: rgba(255, 244, 232, 1);
   height: 892;
   justify-items: center;
 }
 
-.about-usInfo {
+.about-usInfo{
   padding-top: 32px;
   width: 1320px;
   height: 780px;
   justify-items: center;
 }
-
-.about-usText {
+.about-usText{
   padding-top: 32px;
   padding-bottom: 32px;
   width: 1296px;
@@ -155,40 +149,36 @@
   align-items: center;
   justify-content: space-between;
 }
-
-.about-usText h5 {
-  padding-right: 10px;
+.about-usText h5{
+  padding-right: 10px ;
   width: 636px;
   color: #432818;
   font-family: Alegreya;
   font-size: 16px;
 }
-
-.about-usText h3 {
+.about-usText h3{
   color: #432818;
   font-family: Alegreya;
   font-size: 48px;
 }
-
-.exterior {
+.exterior{
   display: block;
   justify-items: center;
 }
 
-.OurMenu {
+
+.OurMenu{
   background-color: rgb(255, 255, 255);
   height: 905;
   justify-items: center;
 }
-
-.menu {
+.menu{
   display: block;
   width: 1320px;
   height: 793px;
   justify-content: center;
 }
-
-.menuText {
+.menuText{
   padding-top: 32px;
   padding-bottom: 32px;
   width: 1296px;
@@ -198,164 +188,7 @@
   justify-self: center;
   justify-content: space-between;
 }
-
-.menuText h5 {
-  padding-right: 10px;
-  width: 636px;
-  color: #432818;
-  font-family: Alegreya;
-  font-size: 16px;
-}
-
-.menuText h3 {
-  color: #432818;
-  font-family: Alegreya;
-  font-size: 48px;
-}
-
-.menuPic {
+.menuPic{
   display: flex;
   justify-content: space-between;
-}
-
-.OurBlog{
-  background-color: rgb(255, 255, 255);
-  height: 903px;
-}
-
-.blog{
-  display: block;
-  width: 1320px;
-  height: 791px;
-  justify-self: center;
-  
-}
-.blogText{
-  padding-top: 32px;
-  padding-bottom: 40px;
-  width: 1296px;
-  height: 72px;
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  justify-content: space-between;
-}
-
-.blogText h5{
-  padding-right: 10px;
-  width: 636px;
-  color: #432818;
-  font-family: Alegreya;
-  font-size: 16px;
-}
-.blogText h3{
-  color: #432818;
-  font-family: Alegreya;
-  font-size: 48px;
-}
-
-.blogContainer{
-  display: flex;
-  width: 1296px;
-  height: 598px;
-  gap: 24px;
-  justify-self: center;
-  justify-content: space-around;
-}
-.container1{
-  width: 416px;
-  height: 598px;
-}
-.container1 img{
-  width: 416px;
-}
-.con1Text{
-  padding-top: 10px;
-  height: 254px;
-  align-content: space-between;
-}
-
-.con1Text button{
-  width: 103px;
-  height: 36px;
-  border: 2px solid #432818;
-  background-color: white;
-}
-.textTitle{
-  width: 416px;
-  height: 90px;
-}
-.date1{
-  color: #432818;
-  font-size: 14px;
-  font-family: sans-serif;
-}
-.title{
-  color: #432818;
-  font-size: 32px;
-  font-family: Alegreya;
-  font-weight: 500;
-  margin-top: 0;
-}
-.infoText{
-  padding-top: 20px;
-  color: #432818;
-  font-family: sans-serif;
-  font-size: 16px;
-}
-.footer{
-  background-color: #432818;
-  height: 365px;
-  height: auto;
-}
-.footerContainer{
-  align-items: center;
-  width: 1320px;
-  height: 253px;
-  justify-self: center;
-  display: flex;
-  justify-content: space-around;
-}
-.con2Text{
-  width: 306px;
-  height: 189px;
-}
-.about1{
-  width: 280px;
-  color: rgba(255, 244, 232, 1);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 100;
-  font-size: 16px;
-}
-.con2Text h3{
-  margin-top: 0;
-  color: rgba(255, 244, 232, 1);
-  font-family: Alegreya;
-  font-weight: 600;
-  font-size: 24px;
-}
-.address{
-  color: rgba(255, 244, 232, 1);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 100;
-  font-size: 16px;
-}
-.teleNumber{
-  color: rgba(255, 244, 232, 1);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 100;
-  font-size: 16px;
-}
-.sociallogo{
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-.moreInfoText p{
-  color: rgba(255, 244, 232, 1);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 100;
-  font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 3px;
 }
