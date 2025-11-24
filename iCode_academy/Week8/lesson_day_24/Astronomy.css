@@ -1,0 +1,246 @@
+body {
+    background-image: url(./files/MacBook\ Pro\ 16_\ -\ 3.png);
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.astroLogo {
+    width: 116px;
+    height: 28px;
+}
+
+/* LeftBar endees ehlene */
+
+.leftBar {
+    justify-content: space-around;
+    display: flex;
+    width: 519px;
+    height: 99px;
+    border-bottom-right-radius: 50px;
+    background-color: #FFFFFF26;
+    backdrop-filter: blur(36px);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.menuIcon {
+    width: 28px;
+    height: 28px;
+}
+
+@font-face {
+    font-family: inter;
+    src: url(../lesson_day_24/files/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+.menuText {
+    color: white;
+    text-decoration: none;
+    font-family: inter;
+}
+
+.institute {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.insText {
+    color: white;
+    font-family: inter;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.arrow {
+    width: 12px;
+    height: 8px;
+}
+
+/* RightBar endees ehlene */
+
+.rightBar {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    width: 519px;
+    height: 99px;
+    border-bottom-left-radius: 50px;
+    background-color: #FFFFFF26;
+    backdrop-filter: blur(36px);
+}
+
+.homeText {
+    color: white;
+    text-decoration: none;
+    font-family: inter;
+    font-size: large;
+    font-weight: 600;
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.achText {
+    color: white;
+    text-decoration: none;
+    font-family: inter;
+    font-size: large;
+    font-weight: 600;
+}
+
+.proPic {
+    width: 38px;
+    height: 38px;
+}
+
+/* Main bourd endees ehlene */
+
+
+.main {
+    margin-left: 74px;
+    margin-right: 44px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* group1 bourd endees ehlene */
+.group1 {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.group1 h1 {
+    color: white;
+    font-family: inter;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.group1 button {
+    width: 174px;
+    height: 52px;
+    color: white;
+    font-family: inter;
+    font-size: larger;
+    background-color: rgba(255, 0, 102, 1);
+    border: none;
+    margin-bottom: 25px;
+}
+
+.group1 img {
+    width: 350px;
+    border-top: 2px solid rgba(255, 255, 255, 0.25);
+    padding-top: 25px;
+}
+
+.group1 p {
+    color: white;
+    font-family: inter;
+    font-weight: 200;
+    font-size: small;
+}
+
+/* group1 bourd endees ehlene */
+
+.group2 {
+    width: 317px;
+    height: 216px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF26;
+    backdrop-filter: blur(36px);
+    justify-content: center;
+    align-items: center;
+}
+
+.gamerPro {
+    width: 45px;
+    height: 45px;
+}
+
+.nameRank {
+    width: 210px;
+    height: 55px;
+    display: flex;
+    gap: 20px;
+}
+
+.nameRankText {
+    height: 55px;
+    
+}
+
+.rank {
+    align-items: center;
+    display: flex;
+    height: 14px;
+    gap: 10px;
+}
+
+.stars {
+    padding-right: 10px;
+    border-right: 2px solid white;
+}
+.name{
+    color: white;
+    font-family: inter;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+.infoText{
+    font-family: inter;
+    font-weight: 300;
+    width: 228px;
+    color: white;
+    font-size: 12px;
+}
+.infoTextGroup a{
+    color: white;
+    font-family: inter;
+    font-size: 12px;
+    font-weight: 300;
+}
+.rankNum{
+    color: white;
+    font-family: inter;
+    font-weight: 300;
+}
+
+/* footer endees ehlene */
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1023px;
+    height: 119px;
+    background-color: #FFFFFF26;
+    justify-self: end;
+    backdrop-filter: blur(36px);
+}
+.trust h2{
+    color: white;
+    font-family: inter;
+    font-size: 24px;
+    font-weight: 400;
+}
