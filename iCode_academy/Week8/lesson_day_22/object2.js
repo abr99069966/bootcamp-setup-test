@@ -88,4 +88,40 @@ const settings = {
 settings.notifications.email = false;
 console.log(settings);
 
+console.log("Дунд"+ " "+ "дасгал №4")
+
+const students = [
+  { name: "Ari", score: 88 },
+  { name: "Temuulen", score: 92 },
+  { name: "Enkh", score: 79 }
+];
+
+let maxScore = -1;        // 1. Эхний бага утга
+let topStudent = null;    // 2. Хамгийн өндөр оноотой хүнийг хадгалах
+
+// 3. Массив дээгүүр гүйх
+for (let i = 0; i < students.length; i++) {
+  let student = students[i];
+
+  // 4. Оноог харьцуулах
+  if (student.score > maxScore) {
+    maxScore = student.score;   // 5. maxScore шинэчлэх
+    topStudent = student;       // topStudent шинэчлэх
+  }
+}
+
+// 6. Хариуг хэвлэх
+console.log(`Хамгийн өндөр оноотой хүн: ${topStudent.name}`);
+
+console.log("Дунд"+ " "+ "дасгал №5")
+
+const movie = {
+  title: "Interstellar",
+  year: 2014,
+  director: "Christopher Nolan"
+};
+
+const keys = Object.keys(movie);   // 1–2. Бүх key-г массив болгох
+
+console.log(keys);                 // 3. Хэвлэх
 
