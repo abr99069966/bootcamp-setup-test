@@ -10,7 +10,7 @@
     --transition-speed: 1s;
 }
 
-{
+*{
   box-sizing: border-box;
 }
 
