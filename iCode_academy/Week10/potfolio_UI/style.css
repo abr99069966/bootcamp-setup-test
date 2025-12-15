@@ -1,0 +1,90 @@
+body {
+    width: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
+/* HEADER */
+header {
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    padding: 30px ;
+}
+header a {
+
+    margin-right: 0;
+    padding-left: 40px;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    
+}
+
+/* HERO SECTION */
+.hero {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.hero .text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+.hero .text p {
+    width: 400px;
+    color: #5a5a5a;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    background: #FF6464;
+    color: #fff;
+    border-radius: 6px;
+}
+
+/* RECENT POSTS */
+section.posts {
+    background: #EDF7FA;
+    padding: 40px 0;
+}
+
+.posts .area {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.posts .cards {
+    display: flex;
+    gap: 20px;
+}
+
+.post-card {
+    background: white;
+    padding: 20px;
+    width: 50%;
+    border-radius: 8px;
+}
+
+/* FEATURED WORKS */
+section.works {
+    width: 80%;
+    margin: 40px auto;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 50px 0;
+    color: #444;
+}
