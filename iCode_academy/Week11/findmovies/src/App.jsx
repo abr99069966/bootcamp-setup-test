@@ -1,29 +1,42 @@
 import { useState } from 'react'
-import logoImage from "./files/logo.png"
-import searchIcon from "./files/mingcute_search-line.png"
+import { Header } from './component/header'
 import './App.css'
+import { MovieCard } from './component/MovieCard'
+import { Movies } from './component/Movies'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const movieIds = [
+    "tt2250912",
+    "tt1630029",
+    "tt9114286",
+    "tt11564570",
+    "tt14109724",
+    "tt13833688",
+    "tt15474916",
+    "tt8093700",
+    "tt10648342",
+    "tt1877830",
+    "tt3704428",
+    "tt1745960",
+    "tt1464335",
+    "tt6710474",
+    "tt10872600",
+    "tt10838180",
+    "tt1160419",
+    "tt11291274",
+    "tt12593682",
+    "tt15398776"
+  ];
+ 
 
   return (
     <>
-      <div className='h-7 flex m-5 pl-20 pr-20 gap-10' >
-        <div className='flex gap-3 items-center h-[26px]' >
-          <img className='w-[26px] h-[26px] '
-          src={logoImage} alt="logo" />
-          <h1 className='text-white h-[14px] justify-center font-semibold '>FindMovies</h1>
-        </div>
-        <div className=' h-7 w-[981] flex border rounded-lg bg-white '>
-          <img className='m-1' src={searchIcon} alt="search" />
-          <input type="text" 
-          placeholder='Search FindMovies'
-          />
-
-        </div>
-      </div>
+    <Header/>
+    <Movies movieId={movieIds}/>
     </>
   )
 }
 
 export default App
+
+// tailwindcss.com
