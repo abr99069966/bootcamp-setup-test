@@ -13,9 +13,10 @@ export const Movies = ({movieId}) => {
                 const fetchedMovies = await fetch(`https://imdb.iamidiotareyoutoo.com/search?tt=${id}`);
                 const data = await fetchedMovies.json();
                 result.push(data);
-                // console.log(result);
+                
                 
             }
+            console.log(result);
             setMovies(result);
         } catch(err) {
             console.error(err);
